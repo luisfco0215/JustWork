@@ -7,8 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class HeroeComponent{
-
-    nombre: string = "Iron-Man";
+    nombre: string = "";
     edad: number = 45;
     counter: number = 0;
     heroes: string[] = [
