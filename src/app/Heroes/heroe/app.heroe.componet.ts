@@ -33,8 +33,8 @@ export class HeroeComponent{
     ChangeHeroe(){
         this.nombre = this.heroes[this.counter++];
     
-        if(this.counter == this.heroes.length -1){
+        if(this.counter == this.heroes.length -1)
           this.counter = 0
-        }
+        
       }
 }

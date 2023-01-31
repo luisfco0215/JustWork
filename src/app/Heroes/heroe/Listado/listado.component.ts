@@ -21,22 +21,21 @@ export class ListadoComponent {
   Remove(): void{
     const listado = this.heroes.pop();
 
-    if(listado != undefined)
+    if(typeof listado == 'string')
       this.newHeroes.push(listado);
   }
 
   Reverse(): void{
     const listado = this.newHeroes.pop();
 
-    if(listado != undefined)
+    if(typeof listado == 'string')
       this.heroes.push(listado);
   }
 
-  ChangeHeroe(){
+  ChangeHeroe(): void{
     this.heroeBorrado = this.heroes[this.counter++];
 
-    if(this.counter == this.heroes.length -1){
+    if(this.counter == this.heroes.length -1)
       this.counter = 0
-    }
   }
 }
